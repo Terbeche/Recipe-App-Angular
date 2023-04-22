@@ -5,7 +5,15 @@
       </div>
 
       <hr>
-      <h1>The list</h1>
+<ul class="list-group">
+  <a href="" 
+  class="list-group-item" 
+  style="cursor: pointer"
+  *ngFor="let ingredient of ingredients">
+  <span class="badge">{{ingredient.amount}}</span>
+  {{ingredient.name}}
+</a>
+</ul>
     </div>
     </div>
   
